@@ -1,0 +1,53 @@
+/* Containers */
+.burger {
+    position: relative;
+    width: 4.4rem;
+    height: 4.4rem;
+}
+
+.burger__container {
+    position: absolute;
+    width: 2rem;
+    height: 1.8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+/* Slices */
+.burger__slice {
+    position: absolute;
+    width: 100%;
+    height: .1rem;
+    background: #FFF;
+}
+
+.burger__slice:nth-child(1){
+    top: .5rem;
+}
+.burger__slice:nth-child(2){
+    top: 1.1rem;
+}
+
+.burger .burger__slice {
+    transform: rotate(0deg);
+    transition: transform .3s ease-in-out, top .3s .3s ease-in-out;
+}
+
+/* Animation */
+.burger.active .burger__slice:nth-child(1){
+    top: .8rem;
+    transform: rotate(45deg);
+    transition: top .3s ease-in-out, transform .3s .3s ease-in-out;
+}
+
+.burger.active .burger__slice:nth-child(2){
+    top: .8rem;
+    transform: rotate(-45deg);
+    transition: top .3s ease-in-out, transform .3s .3s ease-in-out;
+}
+
+.btn-burger--active {
+    background: $color-dark;
+}

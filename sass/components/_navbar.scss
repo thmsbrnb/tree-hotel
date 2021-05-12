@@ -1,0 +1,46 @@
+.navbar {
+    position: fixed;
+    z-index: 10;
+    padding: 3rem 0;
+    width: 10rem;
+    height: 100vh;
+    @include column-between-center;
+    border-right: 1px solid #FFF;
+    transition: all .4s ease-in-out;
+    color: #FFF;
+
+    &__menu {
+        color: inherit;
+    }
+
+    &__logo {
+        transform: rotate(-90deg);
+        width: 12rem;
+        text-align: center;
+        font-family: 'Antic Didone', serif;
+        font-weight: 400;
+        font-size: 2rem;
+        color: inherit;
+    }
+
+    .socials--1 {
+        color: inherit;
+    }
+
+    .socials--2 {
+        margin-top: 1rem;
+        color: inherit;
+    }
+
+    .fab {
+        font-size: 1.8rem;
+        color: inherit;
+    }
+}
+
+.nav--active {
+    width: 8rem;
+    color: $color-dark;
+    box-shadow: 0px 1px 8px 4px rgba(34, 34, 34, .03);
+    background: #FFF;
+}

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 200vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background: $color-dark;
+}
+
+a { 
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}

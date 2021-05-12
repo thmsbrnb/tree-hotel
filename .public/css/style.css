@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 200vh;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.6rem;
+  background: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(34, 34, 34, 0.4), rgba(34, 34, 34, 0.4)), url("/assets/background.jpeg");
+  background-size: cover;
+}
+@media screen and (max-width: 992px) {
+  .home {
+    background-position-x: center;
+  }
+}
+@media screen and (max-width: 868px) {
+  .home {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.home__left {
+  padding: 8rem 18rem;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media screen and (max-width: 992px) {
+  .home__left {
+    padding: 3rem 2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+  }
+}
+.home__left h2 {
+  font-family: "Antic Didone", serif;
+  font-weight: 400;
+  font-size: 12rem;
+  letter-spacing: 0.4rem;
+  line-height: 10rem;
+  color: #f4f265;
+}
+@media screen and (max-width: 992px) {
+  .home__left h2 {
+    font-size: 10rem;
+    line-height: 8rem;
+  }
+}
+@media screen and (max-width: 868px) {
+  .home__left h2 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+}
+.home__left p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 0.04rem;
+  color: #FFF;
+}
+@media screen and (max-width: 992px) {
+  .home__left p {
+    margin-top: 3rem;
+    width: 50%;
+    font-size: 1.2rem;
+  }
+}
+.home__right {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "area-1 area-2 area-3" "area-4 area-5 area-6" "area-7 area-8 area-9" "area-10 area-11 area-12";
+  grid-gap: 0px;
+}
+@media screen and (max-width: 992px) {
+  .home__right {
+    width: 100%;
+  }
+}
+.home__right .item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0.4rem;
+}
+@media screen and (max-width: 576px) {
+  .home__right .item {
+    padding-bottom: 4rem;
+  }
+}
+.home__right .item--1 {
+  grid-area: area-3;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.home__right .item--2 {
+  grid-area: area-5;
+}
+.home__right .item--3 {
+  grid-area: area-6;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.home__right .item--4 {
+  grid-area: area-8;
+}
+.home__right .item--5 {
+  grid-area: area-9;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.home__right .item--6 {
+  grid-area: area-10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 992px) {
+  .home__right .item--6 {
+    grid-area: area-11;
+  }
+}
+.home__right .item--7 {
+  grid-area: area-11;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 992px) {
+  .home__right .item--7 {
+    grid-area: area-12;
+  }
+}
+.home__right .item--8 {
+  grid-area: area-12;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+@media screen and (max-width: 992px) {
+  .home__right .item--8 {
+    display: none;
+  }
+}
+.home__right .item__header {
+  padding: 1rem 1rem 0 1.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  .home__right .item__header {
+    padding: 0.8rem;
+    justify-content: flex-end;
+  }
+}
+.home__right .item__header--name {
+  text-align: left;
+  font-family: "Antic Didone", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
+@media screen and (max-width: 576px) {
+  .home__right .item__header--name {
+    text-align: right;
+    font-size: 2rem;
+  }
+}
+.home__right .item__header--rate {
+  visibility: hidden;
+  color: #222;
+}
+@media screen and (max-width: 576px) {
+  .home__right .item__header--rate {
+    display: none;
+  }
+}
+.home__right .item__details {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  letter-spacing: 0.04rem;
+}
+@media screen and (max-width: 576px) {
+  .home__right .item__details {
+    display: none;
+  }
+}
+.home__right .item__details-price {
+  padding: 1rem 0 0 0.6rem;
+  width: 7.6rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid rgba(34, 34, 34, 0.3);
+}
+.home__right .item__details-price p {
+  margin-bottom: 0.4rem;
+}
+.home__right .item__details-capacity {
+  padding: 3.6rem 0 0 0.6rem;
+  width: 7.6rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid rgba(34, 34, 34, 0.3);
+}
+.home__right .item__details-capacity p {
+  margin-bottom: 0.4rem;
+}
+.home__right .item__details .details {
+  font-size: 1rem;
+  opacity: 65%;
+  visibility: hidden;
+  color: #222;
+}
+.home__right .item__details .details-value {
+  font-family: "Antic Didone", serif;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 0.04rem;
+  visibility: hidden;
+  color: #222;
+}
+
+.about {
+  height: 100vh;
+  background: #F5F5F5;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 10;
+  padding: 3rem 0;
+  width: 10rem;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid #FFF;
+  transition: all 0.4s ease-in-out;
+  color: #FFF;
+}
+.navbar__menu {
+  color: inherit;
+}
+.navbar__logo {
+  transform: rotate(-90deg);
+  width: 12rem;
+  text-align: center;
+  font-family: "Antic Didone", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: inherit;
+}
+.navbar .socials--1 {
+  color: inherit;
+}
+.navbar .socials--2 {
+  margin-top: 1rem;
+  color: inherit;
+}
+.navbar .fab {
+  font-size: 1.8rem;
+  color: inherit;
+}
+
+.nav--active {
+  width: 8rem;
+  color: #222;
+  box-shadow: 0px 1px 8px 4px rgba(34, 34, 34, 0.03);
+  background: #FFF;
+}
+
+.btn-circle {
+  width: 4.4rem;
+  height: 4.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFF;
+  border-radius: 100rem;
+  color: inherit;
+  background: transparent;
+}
+
+.btn-circle--active {
+  border: 1px solid #222;
+}
+
+/* Containers */
+.burger {
+  position: relative;
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
+.burger__container {
+  position: absolute;
+  width: 2rem;
+  height: 1.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Slices */
+.burger__slice {
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  background: #FFF;
+}
+
+.burger__slice:nth-child(1) {
+  top: 0.5rem;
+}
+
+.burger__slice:nth-child(2) {
+  top: 1.1rem;
+}
+
+.burger .burger__slice {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out, top 0.3s 0.3s ease-in-out;
+}
+
+/* Animation */
+.burger.active .burger__slice:nth-child(1) {
+  top: 0.8rem;
+  transform: rotate(45deg);
+  transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+}
+
+.burger.active .burger__slice:nth-child(2) {
+  top: 0.8rem;
+  transform: rotate(-45deg);
+  transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+}
+
+.btn-burger--active {
+  background: #222;
+}
+
+.menu {
+  z-index: 20;
+  position: fixed;
+  top: -100vh;
+  left: 10rem;
+  padding: 1rem 2rem;
+  width: 30rem;
+  height: 100vh;
+  font-family: "Antic Didone", serif;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 0.04rem;
+  transition: left 0.4s ease-in-out, top 0.6s ease-in-out;
+  background: #FFF;
+}
+.menu ul {
+  padding: 2rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.menu ul li {
+  margin-bottom: 0.8rem;
+}
+.menu ul li a {
+  transition: all 0.3s ease-in-out;
+}
+.menu ul li a:hover {
+  opacity: 65%;
+}
+
+.menu--position {
+  left: 8rem;
+}
+
+.menu--active {
+  top: 0;
+}
+
+.btn--square {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.btn--square div {
+  z-index: 1;
+  position: relative;
+  color: #FFF;
+  transition: color 0.4s ease-in-out;
+}
+
+.btn--square::after {
+  content: "";
+  position: absolute;
+  background: #f4f265;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0;
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn--square:hover::after {
+  /* Change animation's axis (X/Y) */
+  transform: translateY(-100%);
+}
+
+.btn--square:hover div {
+  color: #222;
+}
+
+.btn--square:hover .details {
+  visibility: visible;
+}
+
+.btn--square:hover .details-value {
+  visibility: visible;
+}
+
+.btn--square:hover .item__header--rate {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=style.css.map */

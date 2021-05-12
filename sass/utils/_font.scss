@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap");
+// font-family: 'Antic Didone', serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&display=swap");
+// font-family: 'Montserrat', sans-serif;
+
+@mixin text-regular {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    letter-spacing: .04rem;
+}
+
+@mixin text-menu {
+    font-family: 'Antic Didone', serif;
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: .04rem;
+}
+
+@mixin text-title {
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 12rem;
+    letter-spacing: .4rem;
+}
+
+@mixin text-square {
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+}

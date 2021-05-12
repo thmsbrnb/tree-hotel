@@ -1,0 +1,44 @@
+.btn--square {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+.btn--square div {
+    z-index: 1;
+    position: relative;
+    color: #FFF;
+    transition: color .4s ease-in-out;
+}
+
+.btn--square::after {
+    content: "";
+    position: absolute;
+    background: $color-primary;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    transition: transform .4s ease-in-out;
+}
+
+.btn--square:hover::after {
+    /* Change animation's axis (X/Y) */
+    transform: translateY(-100%);
+}
+
+.btn--square:hover div {
+    color: $color-dark;
+}
+
+.btn--square:hover .details {
+    visibility: visible;
+}
+
+.btn--square:hover .details-value {
+    visibility: visible;
+}
+
+.btn--square:hover .item__header--rate {
+    visibility: visible;
+}

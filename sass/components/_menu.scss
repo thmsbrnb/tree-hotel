@@ -1,0 +1,37 @@
+.menu {
+    z-index: 20;
+    position: fixed;
+    top: -100vh;
+    left: 10rem;
+    padding: 1rem 2rem;
+    width: 30rem;
+    height: 100vh;
+    @include text-menu;
+    transition: left .4s ease-in-out, top .6s ease-in-out;
+    background: #FFF;
+
+    ul {
+        padding: 2rem 0;
+        border-bottom: 1px solid lighten($color-dark, 80);
+
+        li {
+            margin-bottom: .8rem;
+
+            a {
+                transition: all .3s ease-in-out;
+
+                &:hover {
+                    opacity: 65%;
+                }
+            }
+        }
+    }
+}
+
+.menu--position {
+    left: 8rem;
+}
+
+.menu--active {
+    top: 0;
+}

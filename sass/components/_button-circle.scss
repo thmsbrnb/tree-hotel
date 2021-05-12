@@ -1,0 +1,13 @@
+.btn-circle {
+    width: 4.4rem;
+    height: 4.4rem;
+    @include flex-center-center;
+    border: 1px solid #FFF;
+    border-radius: 100rem;
+    color: inherit;
+    background: transparent;
+}
+
+.btn-circle--active {
+    border: 1px solid $color-dark;
+}
