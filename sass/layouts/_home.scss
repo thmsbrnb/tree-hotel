@@ -1,7 +1,7 @@
 .home {
     display: flex;
     height: 100vh;
-    background: linear-gradient(to right, rgba(34, 34, 48, .46), rgba(34, 34, 48, .46)), url('./assets/background.jpeg');
+    background: linear-gradient(to right, rgba(34, 34, 48, .46), rgba(34, 34, 48, .46)), url('/background.jpeg');
     background-size: cover;
 
     @include break-lg {
