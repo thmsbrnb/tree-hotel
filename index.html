@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <script src="./app.js" defer></script>
 </head>
-
 <body>
-    
     <!-- Navbar -->
     <nav class="navbar">
-
         <!-- Burger -->
         <button class="navbar__menu btn-circle burger" id="burger">
             <div class="burger__container">
@@ -23,10 +19,8 @@
                 <div class="burger__slice"></div>
             </div>
         </button>
-
         <!-- Logo -->
         <h1 class="navbar__logo">Tree hotel</h1>
-
         <!-- Socials -->
         <div class="navbar__socials">
             <button class="socials--1 btn-circle">
@@ -36,29 +30,26 @@
                 <i class="fab fa-facebook-f"></i>
             </button>
         </div>
-
     </nav>
-
     <!-- Menu -->
     <section class="menu">
         <ul>
-            <li><a href="#!">Home</a></li>
-            <li><a href="#!">Hotels</a></li>
-            <li><a href="#!">Cities</a></li>
-            <li><a href="#!">Categories</a></li>
+            <li><a href="#!" title="Home">Home</a></li>
+            <li><a href="#!" title="Hotels">Hotels</a></li>
+            <li><a href="#!" title="Cities">Cities</a></li>
+            <li><a href="#!" title="Categories">Categories</a></li>
         </ul>
         <ul>
-            <li><a href="#!">About</a></li>
-            <li><a href="#!">Blog</a></li>
-            <li><a href="#!">Press</a></li>
+            <li><a href="#!" title="About">About</a></li>
+            <li><a href="#!" title="Blog">Blog</a></li>
+            <li><a href="#!" title="Press">Press</a></li>
         </ul>
         <ul>
-            <li><a href="#!">Contact Us</a></li>
-            <li><a href="#!">Any Questions?</a></li>
-            <li><a href="#!">Terms</a></li>
+            <li><a href="#!" title="Contact Us">Contact Us</a></li>
+            <li><a href="#!" title="Help">Help</a></li>
+            <li><a href="#!" title="Terms">Terms</a></li>
         </ul>
     </section>
-
     <!-- PAGE - Home -->
     <section class="home">
         <div class="home__left">
@@ -69,7 +60,7 @@
             </p>
         </div>
         <div class="home__right">
-            
+
             <button class="item item--1 btn--square">
                 <div class="item__header">
                     <p class="item__header--name">The Blue<br>Cone</p>
@@ -86,7 +77,6 @@
                     </div>
                 </div>
             </button>
-
             <button class="item item--2 btn--square">
                 <div class="item__header">
                     <p class="item__header--name">7th<br>Room</p>
@@ -103,7 +93,6 @@
                     </div>
                 </div>
             </button>
-
             <button class="item item--3 btn--square">
                 <div class="item__header">
                     <p class="item__header--name">Mirror<br>Cube</p>
@@ -120,7 +109,6 @@
                     </div>
                 </div>
             </button>
-
             <button class="item item--4 btn--square">
                 <div class="item__header">
                     <p class="item__header--name">The<br>Cabin</p>
@@ -137,7 +125,6 @@
                     </div>
                 </div>
             </button>
-
             <button class="item item--5 btn--square">
                 <div class="item__header">
                     <p class="item__header--name">Bird's<br>Nest</p>
@@ -154,7 +141,6 @@
                     </div>
                 </div>
             </button>
-
             <button class="item item--6 btn--square">
                 <div class="item__header">
                     <p class="item__header--name">Dragon<br>Fly</p>
@@ -171,7 +157,6 @@
                     </div>
                 </div>
             </button>
-
             <button class="item item--7 btn--square">
                 <div class="item__header">
                     <p class="item__header--name">The<br>Ufo</p>
@@ -188,15 +173,67 @@
                     </div>
                 </div>
             </button>
-
             <div class="item item--8"></div>
-
         </div>
     </section>
-
     <!-- PAGE - About -->
-    <section class="about"></section>
-
+    <section class="about">
+        <!-- About Left -->
+        <div class="about__left">
+            <div>
+                <h2>7th<span class="about__rate">****</span><br>Room</h2>
+                <p>An hour by car from Luleä (Kallax) airport</p>
+                <div class="about__button">
+                    <button class="btn-pills">Book</button>
+                    <button class="btn-pills btn-pills--outline">Show on map</button>
+                </div>
+            </div>
+        </div>
+        <!-- About Right -->
+        <div class="about__right">
+            <div class="about__right-top">
+                <div>
+                    <p>Inside the room you will find
+                        panoramic windows facing the river
+                        valley and the northern lights -
+                        the bedrooms have skylight
+                        windows for you to view the bright
+                        summer night sky. At the centre
+                        of the room there is a terrace,
+                        formed by a net floor with a naturally
+                        growing pine in the middle.
+                        <br>
+                        <br>
+                        Through the net floor you can see
+                        10 meters below you and behind
+                        a transparent railing lies in the vast
+                        expanse of the Lule River Valley.
+                        A breath taking, awe-inspiring and
+                        perfectly safe place to be.
+                        Also, it is practically mosquito-free,
+                        since mosquitoes don't usually fly this high.</p>
+                </div>
+                <div>
+                    <p class="about-prices">
+                        All prices include a buffet breakfast.<br>
+                        Prices depending on season
+                    </p>
+                </div>
+            </div>
+            <div class="about__right-bottom">
+                <div class="about__right-nav">
+                    <h3>Outside views</h3>
+                    <div class="container">
+                        <button class="btn-circle"><i class="fas fa-arrow-left"></i></button>
+                        <button class="btn-circle"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <p>1 - 5</p>
+                </div>
+                <div class="about__right-image">
+                    <h4>The 7th<br>Room was<br>designed by<br>Norwegian firm,<br>Snöhetta.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-
 </html>

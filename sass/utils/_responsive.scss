@@ -21,3 +21,9 @@ $breakpoints: (
         @content;
     }
 }
+
+@mixin break-xl {
+    @media screen and (max-width: map-get($breakpoints, xl)){
+        @content;
+    }
+}

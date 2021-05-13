@@ -23,7 +23,6 @@
 }
 
 .btn--square:hover::after {
-    /* Change animation's axis (X/Y) */
     transform: translateY(-100%);
 }
 

@@ -1,0 +1,24 @@
+.btn-pills {
+    padding: 1.4rem 2rem;
+    border: none;
+    border-radius: 99rem;
+    @include text-pills;
+    transition: all .24s ease-in-out;
+    color: $color-primary;
+    background: $color-dark;
+
+    &:hover {
+        color: #FFF;
+    }
+
+    &--outline {
+        border: 1px solid $color-dark;
+        color: $color-dark;
+        background: transparent;
+
+        &:hover {
+            color: #FFF;
+            background: $color-dark;
+        }
+    }
+}
