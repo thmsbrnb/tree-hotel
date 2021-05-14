@@ -109,7 +109,7 @@ button {
   }
 }
 .home__right {
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
   width: 50%;
   height: 100%;
   display: grid;
